@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.1" xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+	<persistence-unit name="EAD-assignment1" transaction-type="RESOURCE_LOCAL">
+		<class>org.uc.mcnealy.Artist</class>
+		<class>org.uc.mcnealy.Album</class>
+		<class>org.uc.mcnealy.Genre</class>
+		<class>org.uc.mcnealy.Song</class>
+		<class>org.uc.mcnealy.Playlist</class>
+		<properties>
+			<property name="javax.persistence.jdbc.url" value="jdbc:derby:C:\Users\emcnealy\Program Stuff\Database\MusicDatabase;create=true"/>
+			<property name="javax.persistence.jdbc.user" value=""/>
+			<property name="javax.persistence.jdbc.driver" value="org.apache.derby.jdbc.EmbeddedDriver"/>
+		</properties>
+	</persistence-unit>
+</persistence>
